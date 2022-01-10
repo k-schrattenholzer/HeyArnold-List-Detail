@@ -14,6 +14,7 @@
   font-style: normal;
 }
 
-div {
+main {
   font-family: var(--font);
+  background-color: var(--yellow);
 }
