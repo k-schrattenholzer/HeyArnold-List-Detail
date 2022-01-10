@@ -1,5 +1,5 @@
 :root {
-  --yellow: #FFd227;
+  --yellow: #ffd227;
   --lightyellow: #f8e081;
   --orange: #ff6500;
   --lightorange: #f8a872;
@@ -9,7 +9,11 @@
 
 @font-face {
   font-family: 'Arnorg';
-  src: local('Arnorg'), url('./fonts/ARNORG__.ttf') format('ttf');
+  src: local('Arnorg'), url('../../fonts/Arnorg.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+div {
+  font-family: var(--font);
 }
