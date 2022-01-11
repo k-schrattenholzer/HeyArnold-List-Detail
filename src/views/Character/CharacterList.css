@@ -1,0 +1,41 @@
+@import '../../App.css';
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 40px;
+  height: 50px;
+}
+
+.characterListContainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.characterListEl {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  width: auto;
+}
+.imageEl {
+  opacity: 1;
+  display: block;
+  width: 200px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  margin: 10px;
+  border-radius: 85px;
+}
+
+.imageContainer:hover .imageEl {
+  opacity: 0.3;
+}

@@ -1,6 +1,6 @@
-import { handleRequest } from "msw";
 import { useEffect, useState } from "react"
 import { getCharacters } from "../../services/heyArnoldApi.js"
+import styles from "./CharacterList.css"
 
 
 export default function CharacterList() {
@@ -20,19 +20,27 @@ export default function CharacterList() {
   }, [])
 
   return (
-    <div>
-      <h1>this is the character list</h1>
+    <div className={styles.characterListContainer}>
+
+      <div>
+        <h1>this is the character list</h1>
+        <p>click on a character to get more information</p>
+        </div>
+
       {loading ? <p>loading up</p> : <p>all loaded</p>
       }
-      <ul>
+
+      <div className={styles.characterListEl}>
       {characterList.map((char) => 
-        <li>
-          {char.name}
-          <img src={char.image} alt={char.name} />
+        <li className={styles.imageContainer} key={char._id}>
+          <a href={`/character-detail/${char._id}`}>
+            <img src={char.image} alt={char.name} className={styles.imageEl} />
+          </a>
+          
         </li>
       )
       }
-      </ul>
+      </div>
       
     </div>
   )
