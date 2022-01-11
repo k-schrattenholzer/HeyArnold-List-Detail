@@ -1,5 +1,4 @@
-import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { render } from '@testing-library/react';
 import Character from './Character.jsx';
 
 it('should render the characters component', () => {
@@ -11,9 +10,7 @@ it('should render the characters component', () => {
     }
 
   const { container } = render (
-    <MemoryRouter>
       <Character character={testCharacter}/>
-    </MemoryRouter>
   );
 
   expect(container).toMatchSnapshot();
