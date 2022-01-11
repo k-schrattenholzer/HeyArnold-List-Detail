@@ -36,7 +36,7 @@ describe('CharacterDetail', () => {
       </MemoryRouter>
     );
 
-    // screen.getByText(`loading character`);
+    screen.getByText(`loading character`);
 
     return waitFor(() => {
       screen.getByText('Katie');
