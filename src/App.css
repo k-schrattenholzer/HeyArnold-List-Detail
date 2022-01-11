@@ -9,12 +9,18 @@
 
 @font-face {
   font-family: 'Arnorg';
-  src: local('Arnorg'), url('../../fonts/Arnorg.ttf') format('truetype');
+  src: local('Arnorg'), url('./fonts/Arnorg.ttf')format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  font-family: var(--font);
 }
 
 main {
   font-family: var(--font);
   background-color: var(--yellow);
 }
+
+
