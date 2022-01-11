@@ -9,8 +9,6 @@ export default function CharacterDetail() {
   const [loading, setLoading] = useState(true);
   const [character, setCharacter] = useState({});
 
-  console.log(character);
-
   useEffect(async () => {
     try {
       const char = await getCharacter(id);
@@ -28,8 +26,10 @@ export default function CharacterDetail() {
 
   return (
     <div>
-     { loading ? <p>loading up character {character._id}</p> : 
-      <Character character={character}/>}
+    { loading ? 
+      (<p>loading character</p>) : 
+      ( <Character character={character}/> )
+    }
       <button onClick={redirect}>back to list</button>
     </div>
   )
