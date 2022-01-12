@@ -47,7 +47,7 @@ describe('CharacterList', () => {
     
     await screen.findByText('loading up');
   });
-   waitFor(() => {
-    screen.getByText('Other Name');
+    waitFor(async () => {
+    await screen.findByText('Other Name');
   })
 });
