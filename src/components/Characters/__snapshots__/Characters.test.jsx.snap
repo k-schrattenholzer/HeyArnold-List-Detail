@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the characters component 1`] = `
+<div>
+  <div
+    class="characterListEl"
+  >
+    <li
+      class="imageContainer"
+    >
+      <a
+        href="/character-detail/1"
+      >
+        <img
+          alt="Grandma Gertie"
+          class="imageEl"
+          src="https://website.com/image/gertie.jpg"
+        />
+      </a>
+    </li>
+    <li
+      class="imageContainer"
+    >
+      <a
+        href="/character-detail/2"
+      >
+        <img
+          alt="Arnie"
+          class="imageEl"
+          src="https://website.com/image/arnie.jpg"
+        />
+      </a>
+    </li>
+    <li
+      class="imageContainer"
+    >
+      <a
+        href="/character-detail/3"
+      >
+        <img
+          alt="Stella Shortman"
+          class="imageEl"
+          src="https://website.com/image/Stella-Shortman.jpg"
+        />
+      </a>
+    </li>
+  </div>
+</div>
+`;

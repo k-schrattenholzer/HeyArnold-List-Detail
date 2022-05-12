@@ -1,0 +1,25 @@
+:root {
+  --yellow: #ffd227;
+  --lightyellow: #f8e081;
+  --orange: #ff6500;
+  --lightorange: #f8a872;
+  --black: #000000;
+  --font: 'Arnorg'
+}
+
+@font-face {
+  font-family: 'Arnorg';
+  src: local('Arnorg'), url('./fonts/Arnorg.ttf')format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: var(--font);
+}
+
+body {
+  background-color: var(--yellow);
+}
+
+

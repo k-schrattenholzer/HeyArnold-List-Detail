@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the characters component 1`] = `
+<div>
+  <section>
+    <h1>
+      Grandma Gertie
+    </h1>
+    <img
+      alt="Grandma Gertie"
+      src="https://website.com/image/gertie.jpg"
+    />
+    <p>
+      id:
+      1
+    </p>
+  </section>
+</div>
+`;
